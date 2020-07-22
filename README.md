@@ -1,12 +1,13 @@
-# 使用pycrfsuite的自动分词-词性标注一体化算法
+
+# 利用CRF模型实现中文分词-词性标注  
 segpos = word segmentation + Part of Speech tagging
 
 实验环境：
 
 - macos  
-- Python 3.7
-Windows环境下可直接运行bat文件  
-使用的Python包：
+- Python 3.7  
+Windows环境下可直接运行bat文件    
+使用的Python包：  
 
 - collections
 - scikit-learn

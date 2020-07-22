@@ -91,10 +91,4 @@ Windows环境下可直接运行bat文件
   - `pre_199801.py`:用于预处理人民日报语料库
   - `pre_hit-cir.py`:用于预处理哈工大信息检索研究中心的语料库
 
----
-
-## 问题
-
-- 人民日报语料库训练出来的自动标注模型调用`tagger.info()`会报错：AttributeError: 'NoneType' object has no attribute 'group'.  
-直接原因是存在空标签。其实是训练集的问题，把训练集中的单空格、三空格改成合乎规则的双空格即可。
-详见[github](https://github.com/scrapinghub/python-crfsuite/issues/14).
+---  

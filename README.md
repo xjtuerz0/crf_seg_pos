@@ -1,5 +1,5 @@
 
-# 利用CRF模型实现中文分词-词性标注  
+# 基于CRF实现中文分词和词性标注  
 segpos = word segmentation + Part of Speech tagging
 
 实验环境：

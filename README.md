@@ -1,14 +1,11 @@
 # 使用pycrfsuite的自动分词-词性标注一体化算法
-
-中文信息处理第二次作业  
-分词部分改写自第一次作业：[pycrfsuite-segword](https://github.com/Ricozero/pycrfsuite-segword)  
 segpos = word segmentation + Part of Speech tagging
 
 实验环境：
 
-- Windows 10
+- macos  
 - Python 3.7
-
+Windows环境下可直接运行bat文件  
 使用的Python包：
 
 - collections
@@ -20,9 +17,9 @@ segpos = word segmentation + Part of Speech tagging
 
 ---
 
-## 训练阶段
+## 训练阶段  
 
-运行`run_train.bat`进行训练，  
+运行`run_train.sh`进行训练，  
 训练的语料库由`train.py`的`trainfile`变量决定。  
 训练成功后，models文件夹里面会多出`seg`和`pos`两个模型文件，分别对应分词模型和词性标注模型。  
 词性标注的训练默认是简化的，即只取第一个字母，可以通过`read_seg_pos_file`函数的simplified参数调整。
@@ -37,7 +34,7 @@ segpos = word segmentation + Part of Speech tagging
 
 ### 生语料测试
 
-运行`run_test_raw.bat`，  
+运行`run_test_raw.sh`，  
 测试的文本文件由`test_raw.py`的`testfile`变量决定。  
 测试成功后，测试文件的同名文件被输出到output目录。  
 
@@ -45,7 +42,7 @@ segpos = word segmentation + Part of Speech tagging
 
 ### 熟语料测试
 
-运行`run_test_eva.bat`，  
+运行`run_test_eva.sh`，  
 测试的文本文件由`test_eva.py`的`testfile`变量决定。  
 测试成功后，输出结果评估，测试文件的同名文件被输出到output目录。  
 
